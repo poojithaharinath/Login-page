@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to bottom, rgb(60, 0, 160), rgb(229, 224, 235));
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.form-box h1 {
+  color: #3c00a0;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.form-box h1::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #3c00a0;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  background: #eaeaea;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.input-field i {
+  margin-right: 10px;
+  color: #555;
+}
+
+.input-field input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+.btn-field button {
+  width: 100%;
+  padding: 10px;
+  background: #3c00a0;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-field button:hover {
+  background: #290076;
+}
+
+#Text {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #3c00a0;
+}
+
+
