@@ -8,10 +8,10 @@ const authForm = document.getElementById("authForm");
 // Default mode
 let isLogin = true;
 
-// To Hide name field 
+// Initially hide name field
 nameField.style.display = "none";
 
-// Form between login and signup
+// Toggle between Login and Signup
 Link.addEventListener("click", (e) => {
   e.preventDefault();
   isLogin = !isLogin;
@@ -19,17 +19,19 @@ Link.addEventListener("click", (e) => {
   if (isLogin) {
     formTitle.innerText = "Login";
     submitBtn.innerText = "Login";
-    Text.innerHTML = `Don't have an account? <a href="#" id="Link">Signup</a>`;
     nameField.style.display = "none";
+    Link.textContent = "Signup";
+    Text.childNodes[0].nodeValue = "Don't have an account? ";
   } else {
     formTitle.innerText = "Signup";
     submitBtn.innerText = "Signup";
-    Text.innerHTML = `Already have an account? <a href="#" id="Link">Login</a>`;
     nameField.style.display = "flex";
+    Link.textContent = "Login";
+    Text.childNodes[0].nodeValue = "Already have an account? ";
   }
 });
 
-// Validation on form submit
+// Form submission
 authForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -55,23 +57,3 @@ authForm.addEventListener("submit", (e) => {
 
   alert(`${isLogin ? "Login" : "Signup"} successful!`);
 });
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
